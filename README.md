@@ -2,7 +2,7 @@
 ## C#
 - Add a extra string field to the Question model called Hint
 - Add a hint to each question object in GetQuestions, this is located in the HomeController (This can be anything)
-## JavaScript
+## JavaScript/Knockout
 - Fix the bug in the QuestionModel function, this is causing the questions to not display on the screen
 - Add a observable for the Hint field to QuestionModel
 ## CSHTML/Knockout
