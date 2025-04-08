@@ -6,7 +6,7 @@
     <h1 class="display-4">Questions</h1>
     <div class="custom-vstack" data-bind="foreach: questions">
         <div class="custom-hstack">
-            <span data-bind="text: Text"></span>
+            <span data-bind="text: Text, attr: { title: Hint }"></span>
         </div>
     </div>
     
