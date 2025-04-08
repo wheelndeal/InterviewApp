@@ -7,9 +7,10 @@
     <div class="custom-vstack" data-bind="foreach: questions">
         <div class="custom-hstack">
             <span data-bind="text: Text, attr: { title: Hint }"></span>
-            <div data-bind="if: showAnswer">
-                <span data-bind="text: Answer"></span>
-            </div>
+            <button data-bind="click: toggleAnswer">Show Answer</button>
+        </div>
+        <div class="custom-hstack" data-bind="if: showAnswer">
+            <span data-bind="text: Answer"></span>
         </div>
     </div>
     
