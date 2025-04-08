@@ -19,10 +19,9 @@ function InterviewViewModel() {
 }
 
 function QuestionModel(data) {
-    console.log(data);
     this.Text = ko.observable(data.QuestionText);
     this.Hint = ko.observable(data.Hint);
     this.Answer = ko.observable(data.Answer);
-    this.showAnswer = ko.observable(false);
+    this.showAnswer = ko.observable(true); // setting true just to show it at first
     this.toggleAnswer = () => this.showAnswer(!this.showAnswer());
 }
