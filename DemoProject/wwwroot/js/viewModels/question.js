@@ -19,8 +19,9 @@ function InterviewViewModel() {
 }
 
 function QuestionModel(data) {
-    // THERE IS A BUG IN THIS FUNCTION
+    console.log(data);
     this.Text = ko.observable(data.QuestionText);
+    this.Hint = ko.observable(data.Hint);
     this.Answer = ko.observable(data.Answer);
     this.showAnswer = ko.observable(false);
     this.toggleAnswer = () => this.showAnswer(!this.showAnswer());
